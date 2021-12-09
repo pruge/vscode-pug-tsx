@@ -1,0 +1,64 @@
+{
+  "name": "pug-tsx",
+  "displayName": "pug-tsx",
+  "description": "",
+  "version": "0.1.0",
+  "publisher": "prugehada",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.62.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pug-tsx.append-pug-variable",
+        "title": "pug-tsx: append variable used in pug"
+      }
+    ],
+    "configuration": {
+      "title": "pug-tsx configuration",
+      "properties": {
+        "pug-tsx.on-save": {
+          "type": "boolean",
+          "default": true,
+          "description": "pug-tsx on save"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.4",
+    "@types/hjson": "^2.4.3",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.62.0",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "@vscode/test-electron": "^1.6.2",
+    "eslint": "^8.1.0",
+    "glob": "^7.1.7",
+    "mocha": "^9.1.3",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "diff-match-patch": "^1.0.5",
+    "webpack-preprocessor-pug-tsx": "^0.7.3"
+  }
+}

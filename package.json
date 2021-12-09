@@ -2,18 +2,23 @@
   "name": "pug-tsx",
   "displayName": "pug-tsx",
   "description": "",
-  "version": "0.1.0",
+  "version": "0.1.8",
   "publisher": "prugehada",
   "license": "MIT",
+  "icon": "logo.png",
   "engines": {
     "vscode": "^1.62.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pruge/vscode-pug-tsx.git"
   },
   "categories": [
     "Programming Languages",
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "onLanguage:typescriptreact"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -30,6 +35,28 @@
           "type": "boolean",
           "default": true,
           "description": "pug-tsx on save"
+        },
+        "pug-tsx.options": {
+          "type": "object",
+          "patternProperties": {
+            "include": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "start": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "replace": {
+              "type": "object"
+            }
+          },
+          "default": {},
+          "description": "webpack-preprocessor-pug-tsx options"
         }
       }
     }
@@ -59,6 +86,6 @@
   },
   "dependencies": {
     "diff-match-patch": "^1.0.5",
-    "webpack-preprocessor-pug-tsx": "^0.7.3"
+    "webpack-preprocessor-pug-tsx": "^0.7.6"
   }
 }

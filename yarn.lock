@@ -2607,10 +2607,10 @@ vlq@^1.0.0:
   resolved "https://registry.yarnpkg.com/vlq/-/vlq-1.0.1.tgz#c003f6e7c0b4c1edd623fd6ee50bbc0d6a1de468"
   integrity sha512-gQpnTgkubC6hQgdIcRdYGDSDc+SaujOdyesZQMv6JlfQee/9Mp0Qhnys6WxDWvQnL5WZdT7o2Ul187aSt0Rq+w==
 
-webpack-preprocessor-pug-tsx@^0.7.3:
-  version "0.7.4"
-  resolved "https://registry.yarnpkg.com/webpack-preprocessor-pug-tsx/-/webpack-preprocessor-pug-tsx-0.7.4.tgz#95d1c62bfafb5a0747d3c61df10940071de3fc8a"
-  integrity sha512-rcF+SSplagfwhav/f9efzsQufgbq1K2WBX1WzvpbWsUeqBPym65PAfJXnAMdqPire7MKsDFHsMgDfJyVNXs6BQ==
+webpack-preprocessor-pug-tsx@^0.7.6:
+  version "0.7.6"
+  resolved "https://registry.yarnpkg.com/webpack-preprocessor-pug-tsx/-/webpack-preprocessor-pug-tsx-0.7.6.tgz#6a9ecca3ac61471ce55d1d250462e1b5ff69c02a"
+  integrity sha512-CClEUttaAHshKLAKQwA23cRUFPK6Vp2N6BnJrFbRXhCc7XfrAeIXq0M+UHGPeDBN0lw1+GbQPIE5woXbBkP1QQ==
   dependencies:
     debug "^4.1.1"
     jsonfile "^6.0.1"
